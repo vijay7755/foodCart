@@ -18,8 +18,16 @@ export class DataStorageService {
         recipes
       )
       .subscribe(response => {
-        console.log(response);
+        console.log("save1",response);
       });
+      // this.http
+      // .put(
+      //   'https://recipe-395ad.firebaseio.com/recipes2.json',
+      //   recipes
+      // )
+      // .subscribe(response => {
+      //   console.log("save2",response);
+      // });
   }
 
   fetchRecipes() {
